@@ -1,0 +1,16 @@
+{
+    "name": "neiw",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "appPort": [
+        3000
+    ],
+    "service": "neiw-app",
+    "extensions": [
+        "dbaeumer.vscode-eslint"
+    ],
+    "postCreateCommand": "yarn install",
+    "workspaceFolder": "/usr/src/neiw-app",
+    "shutdownAction": "stopCompose"
+}

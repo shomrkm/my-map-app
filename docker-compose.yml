@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  neiw-app:
+    container_name: neiw
+    build: .
+    tty: true
+    working_dir: /usr/src/neiw-app
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/src/neiw-app:cached
+      - node_modules:/usr/src/neiw-app/node_modules
+      #- dist:/usr/src/neiw-app/dist
+
+volumes:
+  node_modules: {}
