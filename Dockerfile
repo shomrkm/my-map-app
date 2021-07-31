@@ -4,11 +4,11 @@ ENV PROJECT_ROOTDIR /usr/src/neiw-app
 
 WORKDIR $PROJECT_ROOTDIR
 
-#COPY package.json tsconfig.json $PROJECT_ROOTDIR
+COPY package.json tsconfig.json yarn.lock $PROJECT_ROOTDIR
 
-#RUN yarn install
+RUN yarn install
 
-#COPY . $PROJECT_ROOTDIR
+COPY . $PROJECT_ROOTDIR
 
 EXPOSE 3000
 
