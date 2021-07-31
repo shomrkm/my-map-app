@@ -1,16 +1,16 @@
 {
-    "name": "neiw",
+    "name": "map-app",
     "dockerComposeFile": [
         "../docker-compose.yml"
     ],
     "appPort": [
         3000
     ],
-    "service": "neiw-app",
+    "service": "map-app",
     "extensions": [
         "dbaeumer.vscode-eslint"
     ],
     "postCreateCommand": "yarn install",
-    "workspaceFolder": "/usr/src/neiw-app",
+    "workspaceFolder": "/usr/src/map-app",
     "shutdownAction": "stopCompose"
 }

@@ -1,17 +1,18 @@
-version: "3"
+version: '3'
 
 services:
-  neiw-app:
-    container_name: neiw
+  map-app:
+    container_name: map-app
     build: .
     tty: true
-    working_dir: /usr/src/neiw-app
+    working_dir: /usr/src/map-app
     ports:
       - 8080:3000
     volumes:
-      - .:/usr/src/neiw-app:cached
-      - node_modules:/usr/src/neiw-app/node_modules
-      #- dist:/usr/src/neiw-app/dist
+      - .:/usr/src/map-app:cached
+      - node_modules:/usr/src/map-app/node_modules
+      - dist:/usr/src/map-app/dist
 
 volumes:
   node_modules: {}
+  dist: {}

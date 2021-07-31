@@ -1,6 +1,6 @@
 FROM node:14.17-alpine
 
-ENV PROJECT_ROOTDIR /usr/src/neiw-app
+ENV PROJECT_ROOTDIR /usr/src/map-app
 
 WORKDIR $PROJECT_ROOTDIR
 
